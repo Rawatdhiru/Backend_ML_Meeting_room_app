@@ -55,3 +55,6 @@ def booking_list(request):
 
 def this(self):
     pass
+
+def sachin(self):
+    pass
