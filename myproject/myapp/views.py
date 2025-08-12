@@ -47,8 +47,11 @@ def book_room(request):
 
     return render(request, 'myapp/booking_form.html', {'form': form})
 
-
+# this is new 
 
 def booking_list(request):
     bookings = Booking.objects.all().order_by('-date')
     return render(request, 'myapp/booking_list.html', {'bookings': bookings})
+
+def this(self):
+    pass
