@@ -1,0 +1,24 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+    <h2>Book a Meeting Room</h2>
+
+    <form method="post">
+  {% csrf_token %}
+  
+  {{ form.user_name.label_tag }}<br>
+  {{ form.user_name }}<br><br>
+
+  {{ form.room.label_tag }}<br>
+  {{ form.room }}<br><br>
+
+  {{ form.date.label_tag }}<br>
+  {{ form.date }}<br><br>
+
+  {{ form.start_time.label_tag }}<br>
+  {{ form.start_time }}<br><br>
+
+  <button type="submit">Book</button>
+</form>
+
+{% endblock %}

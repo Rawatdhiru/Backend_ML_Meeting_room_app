@@ -1,0 +1,21 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Home - Room Booking{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-5 mb-3">📅 Welcome to the Room Booking System</h1>
+        <p class="lead">Easily schedule and manage room bookings with just a few clicks.</p>
+
+        <div class="mt-4">
+            <a href="{% url 'book_room' %}" class="btn btn-primary btn-lg me-3">
+                Book a Room
+            </a>
+            <a href="{% url 'booking_list' %}" class="btn btn-outline-secondary btn-lg">
+                View Bookings
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
